@@ -5,6 +5,7 @@
 }
 body{
     background-color: #f1f1f1;
+    font-family: 'Commissioner';
     height: 6000px
 }
 /* start navbar */
@@ -16,7 +17,7 @@ body{
     -o-background-size:  100% 100%;
     background-size:  100% 100%;
     height: 600px;
-    padding-top: 50px
+    padding-top: 33px
 }
 .navbar .brand{
     margin-bottom:  30px;
@@ -38,7 +39,7 @@ body{
 }
 .navbar .brand .navbar-button span{
     display: block;
-    width: 22px;
+    width: 20px;
     height: 3px;
     background-color: #fff
    
@@ -77,34 +78,143 @@ body{
     background-color: #fff;
     border-radius: 10px;
     text-align: center;
+    position: relative;
+    padding-bottom: 45px
 }
 .bamboo .bamboo-body .img-craft{
     margin-top: -28px;
 }
 .bamboo .bamboo-body h1{
-    font-size: 40px;
     margin-top: 30px;
-    margin-bottom: 30px
+    font-size: 33px;
+    font-weight: bolder
 }
 .bamboo .bamboo-body p{
-    font-size: 29px;
-    color: #9a9898;
+    font-size: 21px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    margin-top: 25px;
     line-height: 1.7
 }
 .bamboo .bamboo-body button{
-    width: 250px;
-    height: 50px;
+    width: 257px;
+    height: 56px;
     border-radius:30px;
     margin-right: 15px;
-    background-color: #28abaf;
+    background-color:  hsl(176, 50%, 47%);
     color: #fff;
-    display: inline-block;
     border: none;
-    outline: none
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px
 }
 .bamboo .bamboo-body .bookmark{
+    display: inline-block;
+    position: absolute;
+    bottom: 45px
 }
 /* end section bamboo */
+
+/* start section pricing table */
+
+.pricing{
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-top: 30px;
+    padding:  10px 30px 40px
+}
+.pricing .price{
+    padding-top: 30px;
+    padding-bottom: 30px
+}
+.pricing .price h1{
+    font-weight: 700;
+    margin-bottom: 15px
+}
+.pricing .divider{
+    width: 85px;
+    height: 1px;
+    background-color: hsl(0, 0%, 48%);
+    margin: auto
+}
+.pricing .progress{
+    width: 100%;
+    height: 10px;
+    border-radius: 8px;
+    background-color: hsl(0, 0%, 93%);
+}
+.pricing .progress span{
+    width: 85%;
+    height: 100%;
+    display: block;
+    background-color: hsl(176, 50%, 47%);
+    border-radius: 8px
+}
+/* end section pricing table */
+
+/* start section about */
+
+.about-us{
+    margin-top: 30px;
+    margin-bottom: 30px
+}
+.about-us .container .about{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 45px 25px 25px
+}
+.about-us .container .about h2{
+    margin-bottom: 30px
+}
+.about-us .container .about p{
+    margin-bottom: 30px
+}
+.about-us .container .about .stand{
+    border: 1px solid hsl(0, 0%, 48%);
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 30px
+}
+.about-us .container .about .stand:last-child{
+    opacity: 0.4
+}
+.about-us .container .about .stand>span{
+    color: hsl(176, 50%, 47%);
+    margin-bottom: 30px;
+    margin-top: 8px;
+    display: block;
+}
+.about-us .container .about p{
+    margin-bottom: 30px;
+}
+.about-us .container .about .title-card{
+    font-size: 30px;
+    color: #000;
+    font-weight: bold
+}
+.about-us .container .about .title-card span{
+    font-size: 16px;
+    color: hsl(0, 0%, 48%);
+    font-weight: 200
+}
+.about-us .container .about button{
+    width: 150px;
+    height: 45px;
+    border-radius: 23px;
+    text-align: center;
+    background-color: hsl(176, 50%, 47%);
+    color: #fff;
+    border: none;
+    outline: none;
+    font-weight: bold
+}
+.about-us .container .about .stand:last-child button{
+    background-color:  hsl(0, 0%, 50%);
+}
+
+/* end section about */
 
 /* start custom class */
 
@@ -117,6 +227,8 @@ body{
     margin-right: auto;
     margin-left: auto;
 }
+p{
+    color: hsl(0, 0%, 48%);
 }
 
 /* end custom class */
