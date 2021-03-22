@@ -6,7 +6,7 @@
 body{
     background-color: #f1f1f1;
     font-family: 'Commissioner';
-    height: 6000px
+    height: 3454px
 }
 /* start navbar */
 
@@ -16,7 +16,7 @@ body{
     -moz-background-size:  100% 100%;
     -o-background-size:  100% 100%;
     background-size:  100% 100%;
-    height: 600px;
+    height: 450px;
     padding-top: 33px
 }
 .navbar .brand{
@@ -72,7 +72,7 @@ body{
 /* start section bamboo */
 
 .bamboo{
-    margin-top: -100px
+    margin-top: -90px;
 }
 .bamboo .bamboo-body{
     background-color: #fff;
@@ -107,13 +107,15 @@ body{
     outline: none;
     cursor: pointer;
     font-weight: bold;
-    font-size: 16px
+    font-size: 16px;
+    cursor: pointer
 }
 .bamboo .bamboo-body .bookmark{
     display: inline-block;
     position: absolute;
     bottom: 45px
 }
+
 /* end section bamboo */
 
 /* start section pricing table */
@@ -166,10 +168,11 @@ body{
     padding: 45px 25px 25px
 }
 .about-us .container .about h2{
-    margin-bottom: 30px
+    margin-bottom: 30px;
 }
 .about-us .container .about p{
-    margin-bottom: 30px
+    margin-bottom: 25px;
+    line-height: 1.7
 }
 .about-us .container .about .stand{
     border: 1px solid hsl(0, 0%, 48%);
@@ -208,7 +211,8 @@ body{
     color: #fff;
     border: none;
     outline: none;
-    font-weight: bold
+    font-weight: bold;
+    cursor: pointer
 }
 .about-us .container .about .stand:last-child button{
     background-color:  hsl(0, 0%, 50%);
@@ -216,19 +220,203 @@ body{
 
 /* end section about */
 
+/* start section supported */
+
+.supported{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 3454px;
+    z-index: 3;
+    display: none;
+}
+.supported .support{
+    padding: 50px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    width: 90%;
+    margin:  200px auto
+}
+.supported .support h2{
+    margin: 40px auto;
+    color: #000;
+}
+.supported .support p{
+    line-height: 1.7;
+    margin-bottom: 40px
+}
+.supported .support button{
+    width: 100px;
+    height: 45px;
+    color: #fff;
+    background-color: hsl(176, 50%, 47%);
+    text-align: center;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+/* end section supported */
+
+/* start section back */
+
+.back{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 3454px;
+    z-index: 5;
+    display: none;
+    padding: 150px 25px
+}
+.back .back-project{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 45px 25px 25px
+}
+.back .back-project h2{
+    margin-bottom: 30px;
+    text-transform: capitalize
+}
+.back .back-project p{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    line-height: 1.7
+}
+.back .back-project .stand{
+    border-radius: 10px;
+    border: 1px solid hsl(0, 0%, 48%);
+    margin-bottom: 20px;
+}
+.back .back-project .stand .stand-content{
+    padding: 25px;
+    position: relative
+}
+.back .back-project .stand:last-child{
+    opacity: 0.4
+}
+.back .back-project .stand .stand-content input[type='checkbox']:before{
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 1px solid hsl(0, 0%, 48%);
+    top: 25px
+}
+.back .back-project .stand .stand-content input[type='checkbox']:after{
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color:  hsl(176, 50%, 47%);
+    top: 29.5px;
+    left: 29px;
+    display: none
+}
+.back .back-project .stand .stand-content input[type='checkbox']:checked:after{
+    display: block
+}
+.back .back-project .stand .stand-content input[type='checkbox']{
+    appearance: none
+}
+.back .back-project .stand .stand-content input[type='checkbox']:first-of-type:before{
+    top: 25px 
+}
+.back .back-project .stand .stand-content label{
+    font-size: 20px;
+    font-weight: bold
+}
+.back .back-project .stand .stand-content>label,
+.back .back-project .stand .stand-content>span{
+    margin-left: 50px
+}
+.back .back-project .stand .stand-content>span{
+    color: hsl(176, 50%, 47%);
+    margin-top: 8px;
+    display: block;
+}
+.back .back-project .title-card{
+    font-size: 30px;
+    color: #000;
+    font-weight: bold
+}
+.back .back-project .title-card span{
+    font-size: 16px;
+    color: hsl(0, 0%, 48%);
+    font-weight: 200
+}
+.back .back-project .stand .enter-pledge{
+    border-top: 1px solid hsl(0, 0%, 85%);
+    text-align: center;
+    padding-bottom: 30px;
+    display: none
+}
+.back .back-project .stand .enter-pledge.active{
+    display: block
+}
+.back .back-project .stand .enter-pledge h4{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: hsl(0, 0%, 48%);
+    font-weight: 200
+}
+.back .back-project .stand .enter-pledge button{
+    width: 130px;
+    height: 55px;
+    color: #000;
+    font-size: 18px;
+    background-color:#fff;
+    text-align: center;
+    border-radius: 25px;
+    border: 1px solid hsl(0, 0%, 48%);
+    outline: none;
+    cursor: pointer;
+}
+.back .back-project .stand .enter-pledge button:first-of-type{
+    margin-right: 30px;
+    font-weight: bold;
+}
+.back .back-project .stand .enter-pledge button:first-of-type span{
+    color: hsl(0, 0%, 48%);
+    margin-right: 5px
+}
+.back .back-project .stand .enter-pledge button:hover{
+    background-color: hsl(176, 50%, 47%);
+    color: #fff;
+    border: none
+}
+.back .back-project .stand:last-child .enter-pledge button{
+    cursor: no-drop
+}
+
+/* end section back */
+
 /* start custom class */
 
 .active{
     display: block
 }
 .container{
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: 25px;
+    padding-left: 25px;
     margin-right: auto;
     margin-left: auto;
 }
 p{
     color: hsl(0, 0%, 48%);
+}
+h1, h2, h3, h4, h5, h6{
+    text-transform: capitalize
 }
 
 /* end custom class */
